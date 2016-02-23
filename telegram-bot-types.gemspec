@@ -11,6 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = 'Virtus types for Telegram Bot API'
   spec.homepage      = 'https://github.com/telegram-bot-rb/telegram-bot-types'
+  spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(spec)/}) }
   spec.bindir        = 'exe'

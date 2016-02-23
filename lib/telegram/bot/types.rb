@@ -1,0 +1,29 @@
+%w(
+  base
+  user
+  audio
+  photo_size
+  user_profile_photos
+  document
+  sticker
+  video
+  voice
+  contact
+  location
+  chat
+  message
+  inline_query
+  inline_query_result_article
+  inline_query_result_photo
+  inline_query_result_gif
+  inline_query_result_mpeg4_gif
+  inline_query_result_video
+  chosen_inline_result
+  update
+  reply_keyboard_markup
+  reply_keyboard_hide
+  force_reply
+  file
+).each do |type|
+  require "telegram/bot/types/#{type}"
+end

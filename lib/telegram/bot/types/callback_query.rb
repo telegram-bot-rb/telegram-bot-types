@@ -7,6 +7,7 @@ module Telegram
         attribute :message, Message
         attribute :inline_message_id, String
         attribute :data, String
+        attribute :chat, Chat
       end
     end
   end

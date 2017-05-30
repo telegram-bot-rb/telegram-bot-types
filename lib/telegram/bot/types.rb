@@ -4,15 +4,20 @@ module Telegram
   module Bot
     module Types
       %w(
+        animation
         audio
         base
+        callback_game
         callback_query
         chat
+        chat_member
         chosen_inline_result
         contact
         document
         file
         force_reply
+        game
+        game_high_score
         inline_keyboard_button
         inline_keyboard_markup
         inline_query
@@ -28,6 +33,7 @@ module Telegram
         inline_query_result_cached_voice
         inline_query_result_contact
         inline_query_result_document
+        inline_query_result_game
         inline_query_result_gif
         inline_query_result_location
         inline_query_result_mpeg4_gif
@@ -40,20 +46,29 @@ module Telegram
         input_message_content
         input_text_message_content
         input_venue_message_content
+        invoice
         keyboard_button
+        labeled_price
         location
         message
         message_entity
+        order_info
         photo_size
-        reply_keyboard_hide
+        pre_checkout_query
         reply_keyboard_markup
+        reply_keyboard_remove
+        shipping_address
+        shipping_option
+        shipping_query
         sticker
+        successful_payment
         update
         user
         user_profile_photos
         venue
         version
         video
+        video_note
         voice
       ).each do |type|
         autoload type.camelize, "telegram/bot/types/#{type}"

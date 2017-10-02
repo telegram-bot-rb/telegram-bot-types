@@ -4,7 +4,7 @@ module Telegram
   module Bot
     module Types
       class InlineKeyboardMarkup < Base
-        attribute :inline_keyboard, [[InlineKeyboardButton]]
+        attribute :inline_keyboard, Array.of(Array.of(InlineKeyboardButton))
       end
     end
   end

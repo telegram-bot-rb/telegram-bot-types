@@ -4,7 +4,7 @@ module Telegram
   module Bot
     module Types
       class InlineQueryResultPhoto < Base
-        attribute :type, String, default: 'photo'
+        attribute :type, String.default('photo')
         attribute :id, String
         attribute :photo_url, String
         attribute :thumb_url, String

@@ -6,7 +6,7 @@ module Telegram
       class PollAnswer < Base
         attribute :poll_id, String
         attribute :user, User
-        attribute :option_ids, [Integer]
+        attribute :option_ids, Array.of(Integer)
       end
     end
   end

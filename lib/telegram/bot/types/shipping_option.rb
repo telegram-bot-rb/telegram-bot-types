@@ -6,7 +6,7 @@ module Telegram
       class ShippingOption < Base
         attribute :id, String
         attribute :title, String
-        attribute :prices, [LabeledPrice]
+        attribute :prices, Array.of(LabeledPrice)
       end
     end
   end

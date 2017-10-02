@@ -4,7 +4,7 @@ module Telegram
   module Bot
     module Types
       class InputMediaDocument < Base
-        attribute :type, String, default: 'document'
+        attribute :type, String.default('document')
         attribute :media, String
         attribute :thumb, String
         attribute :caption, String

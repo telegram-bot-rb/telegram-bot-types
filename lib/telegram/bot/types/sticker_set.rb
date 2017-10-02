@@ -8,7 +8,7 @@ module Telegram
         attribute :title, String
         attribute :is_animated, Boolean
         attribute :contains_masks, Boolean
-        attribute :stickers, [Sticker]
+        attribute :stickers, Array.of(Sticker)
       end
     end
   end

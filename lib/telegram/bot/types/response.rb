@@ -81,7 +81,7 @@ module Telegram
         # return either object ot true, so it bypasses true value as is.
         def wrap(object, type)
           return object if object == true
-          if type.is_a?(Array)
+          if type.is_a?(::Array)
             type = type.first
             object.map { |x| type.new(x) }
           else

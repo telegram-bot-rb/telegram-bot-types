@@ -20,5 +20,6 @@ RSpec.describe Telegram::Bot::Types::Update do
     field_class = Telegram::Bot::Types.const_get(Telegram::Bot::Types.camelize(field))
     its(field) { should be_instance_of field_class }
     its([field]) { should be_instance_of field_class }
+    its([field.to_sym]) { should be_instance_of field_class }
   end
 end

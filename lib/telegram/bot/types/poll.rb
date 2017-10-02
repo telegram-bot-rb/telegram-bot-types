@@ -6,7 +6,7 @@ module Telegram
       class Poll < Base
         attribute :id, String
         attribute :question, String
-        attribute :options, [PollOption]
+        attribute :options, Array.of(PollOption)
         attribute :total_voter_count, Integer
         attribute :is_closed, Boolean
         attribute :is_anonymous, Boolean

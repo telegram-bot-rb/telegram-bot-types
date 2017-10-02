@@ -1,8 +1,13 @@
-require 'active_support/core_ext/string/inflections'
-
 module Telegram
   module Bot
     module Types
+      module_function
+
+      # Simple implementation for internal use only.
+      def camelize(str)
+        str.gsub(/(?:_|(\/)|^)([a-z\d]*)/i) { "#{$1}#{$2.capitalize}" }
+      end
+
       %w[
         animation
         audio
@@ -73,7 +78,7 @@ module Telegram
         video_note
         voice
       ].each do |type|
-        autoload type.camelize, "telegram/bot/types/#{type}"
+        autoload camelize(type), "telegram/bot/types/#{type}"
       end
     end
   end

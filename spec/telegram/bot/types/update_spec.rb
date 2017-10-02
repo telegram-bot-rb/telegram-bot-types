@@ -1,5 +1,3 @@
-require 'active_support/core_ext/string/inflections'
-
 RSpec.describe Telegram::Bot::Types::Update do
   subject { instance }
   let(:instance) { described_class.new attrs }
@@ -17,7 +15,7 @@ RSpec.describe Telegram::Bot::Types::Update do
     inline_query
     chosen_inline_result
   ].each do |field|
-    field_class = Telegram::Bot::Types.const_get(field.camelize)
+    field_class = Telegram::Bot::Types.const_get(Telegram::Bot::Types.camelize(field))
     its(field) { should be_instance_of field_class }
     its([field]) { should be_instance_of field_class }
   end

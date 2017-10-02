@@ -69,7 +69,6 @@ module Telegram
         user
         user_profile_photos
         venue
-        version
         video
         video_note
         voice

@@ -4,7 +4,7 @@ module Telegram
   module Bot
     module Types
       class InlineQueryResultCachedGif < Base
-        attribute :type, String, default: 'gif'
+        attribute :type, String.default('gif')
         attribute :id, String
         attribute :gif_file_id, String
         attribute :title, String

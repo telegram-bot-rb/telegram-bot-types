@@ -4,7 +4,7 @@ module Telegram
   module Bot
     module Types
       class InlineQueryResultVenue < Base
-        attribute :type, String, default: 'venue'
+        attribute :type, String.default('venue')
         attribute :id, String
         attribute :latitude, Float
         attribute :longitude, Float

@@ -10,9 +10,8 @@ module Telegram
         attribute :ip_address, String
         attribute :last_error_date, Integer
         attribute :last_error_message, String
-        attribute :max_connections, String
         attribute :max_connections, Integer
-        attribute :allowed_updates, [String]
+        attribute :allowed_updates, Array.of(String)
       end
     end
   end

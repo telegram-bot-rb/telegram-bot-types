@@ -4,7 +4,7 @@ module Telegram
   module Bot
     module Types
       class InputMediaAudio < Base
-        attribute :type, String, default: 'audio'
+        attribute :type, String.default('audio')
         attribute :media, String
         attribute :thumb, String
         attribute :caption, String

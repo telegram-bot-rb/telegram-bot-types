@@ -3,8 +3,9 @@
 RSpec.describe Telegram::Bot::Types::Base do
   let(:klass) do
     Class.new(described_class) do
-      attribute :text, String
-      attribute :number, Numeric
+      types = Telegram::Bot::Types
+      attribute :text, types::String
+      attribute :number, types::Integer
     end
   end
 

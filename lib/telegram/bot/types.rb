@@ -11,6 +11,7 @@ module Telegram
         callback_query
         chat
         chat_member
+        chat_photo
         chosen_inline_result
         contact
         document
@@ -50,6 +51,7 @@ module Telegram
         keyboard_button
         labeled_price
         location
+        mask_position
         message
         message_entity
         order_info
@@ -61,6 +63,7 @@ module Telegram
         shipping_option
         shipping_query
         sticker
+        sticker_set
         successful_payment
         update
         user

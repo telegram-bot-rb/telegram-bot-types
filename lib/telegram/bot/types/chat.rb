@@ -9,6 +9,10 @@ module Telegram
         attribute :first_name, String
         attribute :last_name, String
         attribute :all_members_are_administrators, Boolean
+        attribute :photo, ChatPhoto
+        attribute :description, String
+        attribute :invite_link, String
+        attribute :pinned_message, Message
       end
     end
   end

@@ -3,7 +3,7 @@ require 'active_support/core_ext/string/inflections'
 module Telegram
   module Bot
     module Types
-      %w(
+      %w[
         animation
         audio
         base
@@ -72,7 +72,7 @@ module Telegram
         video
         video_note
         voice
-      ).each do |type|
+      ].each do |type|
         autoload type.camelize, "telegram/bot/types/#{type}"
       end
     end

@@ -12,11 +12,11 @@ RSpec.describe Telegram::Bot::Types::Update do
     }
   end
 
-  %w(
+  %w[
     message
     inline_query
     chosen_inline_result
-  ).each do |field|
+  ].each do |field|
     field_class = Telegram::Bot::Types.const_get(field.camelize)
     its(field) { should be_instance_of field_class }
     its([field]) { should be_instance_of field_class }

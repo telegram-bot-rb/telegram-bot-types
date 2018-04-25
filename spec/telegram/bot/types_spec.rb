@@ -8,4 +8,8 @@ RSpec.describe Telegram::Bot::Types do
       described_class.const_get(name)
     end
   end
+
+  it 'has all types loadable and valid' do
+    described_class.constants.each { |x| described_class.const_get(x) }
+  end
 end

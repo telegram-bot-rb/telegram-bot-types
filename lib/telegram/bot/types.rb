@@ -64,6 +64,7 @@ module Telegram
         pre_checkout_query
         reply_keyboard_markup
         reply_keyboard_remove
+        response
         shipping_address
         shipping_option
         shipping_query

@@ -77,6 +77,7 @@ module Telegram
         video
         video_note
         voice
+        webhook_info
       ].each do |type|
         autoload camelize(type), "telegram/bot/types/#{type}"
       end

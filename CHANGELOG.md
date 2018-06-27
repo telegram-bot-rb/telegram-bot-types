@@ -1,3 +1,7 @@
+# Unreleased
+
+- Strip empty values from `#to_hash`.
+
 # 0.6
 
 - Add WebhookInfo

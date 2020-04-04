@@ -3,7 +3,7 @@
 module Telegram
   module Bot
     module Types
-      VERSION = '0.6.1'
+      VERSION = '0.6.2'
 
       def self.gem_version
         Gem::Version.new VERSION

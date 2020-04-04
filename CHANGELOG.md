@@ -1,5 +1,9 @@
 # Unreleased
 
+# 0.6.2
+
+- Bunch of new types.
+
 # 0.6.1
 
 - Strip empty values from `#to_hash`.

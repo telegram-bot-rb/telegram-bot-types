@@ -10,14 +10,18 @@ module Telegram
         attribute :forward_from_chat, Chat
         attribute :forward_from_message_id, Integer
         attribute :forward_signature, String
+        attribute :forward_sender_name, String
         attribute :forward_date, Integer
         attribute :reply_to_message, Message
         attribute :edit_date, Integer
+        attribute :media_group_id, String
         attribute :author_signature, String
         attribute :text, String
         attribute :entities, [MessageEntity]
+        attribute :caption_entities, [MessageEntity]
         attribute :audio, Audio
         attribute :document, Document
+        attribute :animation, Animation
         attribute :game, Game
         attribute :photo, [PhotoSize]
         attribute :sticker, Sticker
@@ -28,6 +32,7 @@ module Telegram
         attribute :contact, Contact
         attribute :location, Location
         attribute :venue, Venue
+        attribute :poll, Poll
         attribute :new_chat_members, [User]
         attribute :left_chat_member, User
         attribute :new_chat_title, String
@@ -41,6 +46,9 @@ module Telegram
         attribute :pinned_message, Message
         attribute :invoice, Invoice
         attribute :successful_payment, SuccessfulPayment
+        attribute :connected_website, String
+        attribute :passport_data, PassportData
+        attribute :reply_markup, InlineKeyboardMarkup
 
         alias_method :to_s, :text
       end

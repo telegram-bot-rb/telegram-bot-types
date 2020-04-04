@@ -1,8 +1,10 @@
+# frozen_string_literal: true
+
 require 'pathname'
 require 'pry'
 require 'rspec/its'
 
-GEM_ROOT = Pathname.new File.expand_path('../..', __FILE__)
+GEM_ROOT = Pathname.new File.expand_path('..', __dir__)
 
 $LOAD_PATH.unshift GEM_ROOT.join('lib')
 require 'telegram/bot/types'

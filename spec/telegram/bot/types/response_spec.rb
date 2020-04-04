@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe Telegram::Bot::Types::Response do
   it 'has WRAPPED_METHODS' do
     expect(described_class::WRAPPED_METHODS).to be_instance_of(Hash)

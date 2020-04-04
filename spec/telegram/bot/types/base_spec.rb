@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe Telegram::Bot::Types::Base do
   let(:klass) do
     Class.new(described_class) do

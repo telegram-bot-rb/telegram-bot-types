@@ -1,5 +1,9 @@
 # Unreleased
 
+# 0.6.3
+
+- Bunch of new types from Bot API 5.3.
+
 # 0.6.2
 
 - Bunch of new types.

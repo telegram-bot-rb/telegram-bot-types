@@ -3,10 +3,9 @@
 module Telegram
   module Bot
     module Types
-      VERSION = '0.6.3'
-
-      def self.gem_version
-        Gem::Version.new VERSION
+      class ChatLocation < Base
+        attribute :location, Location
+        attribute :address, String
       end
     end
   end

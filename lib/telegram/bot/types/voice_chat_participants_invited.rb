@@ -3,10 +3,8 @@
 module Telegram
   module Bot
     module Types
-      VERSION = '0.6.3'
-
-      def self.gem_version
-        Gem::Version.new VERSION
+      class VoiceChatParticipantsInvited < Base
+        attribute :users, [User]
       end
     end
   end

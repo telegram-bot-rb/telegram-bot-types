@@ -3,10 +3,7 @@
 module Telegram
   module Bot
     module Types
-      VERSION = '0.6.3'
-
-      def self.gem_version
-        Gem::Version.new VERSION
+      class VoiceChatStarted < Base
       end
     end
   end

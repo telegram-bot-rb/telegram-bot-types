@@ -7,6 +7,7 @@ module Telegram
         attribute :type, String, default: 'video'
         attribute :media, String
         attribute :caption, String
+        attribute :parse_mode, String
         attribute :width, Integer
         attribute :height, Integer
         attribute :duration, Integer

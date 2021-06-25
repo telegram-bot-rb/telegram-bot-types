@@ -23,3 +23,5 @@ module Telegram
     end
   end
 end
+
+require 'telegram/bot/types/version'

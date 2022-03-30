@@ -1,5 +1,7 @@
 # Unreleased
 
+- Use dry-types instead of virtus.
+
 # 0.6.3
 
 - Bunch of new types from Bot API 5.3.

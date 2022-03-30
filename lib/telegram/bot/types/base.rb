@@ -27,8 +27,13 @@ module Telegram
         end
 
         # Access fields by string values for backward compatibility.
+        # Don't raise errors when accessing missing attributes.
+        # https://github.com/dry-rb/dry-struct/pull/177
         def [](name)
-          super(name.to_sym)
+          name = name.to_sym
+          super(name)
+        rescue MissingAttributeError
+          raise unless self.class.attribute_names.include?(name)
         end
       end
     end

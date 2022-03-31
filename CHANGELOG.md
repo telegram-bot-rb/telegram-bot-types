@@ -1,5 +1,7 @@
 # Unreleased
 
+# 0.7.0
+
 - Use dry-types instead of virtus.
 
 # 0.6.3

@@ -8,11 +8,11 @@ module Telegram
         attribute :data, String
         attribute :phone_number, String
         attribute :email, String
-        attribute :files, [PassportFile]
+        attribute :files, Array.of(PassportFile)
         attribute :front_side, PassportFile
         attribute :reverse_side, PassportFile
         attribute :selfie, PassportFile
-        attribute :translation, [PassportFile]
+        attribute :translation, Array.of(PassportFile)
         attribute :hash, String
       end
     end

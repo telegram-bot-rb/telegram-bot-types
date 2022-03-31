@@ -4,7 +4,7 @@ module Telegram
   module Bot
     module Types
       class InlineQueryResultAudio < Base
-        attribute :type, String, default: 'audio'
+        attribute :type, String.default('audio')
         attribute :id, String
         attribute :audio_url, String
         attribute :title, String

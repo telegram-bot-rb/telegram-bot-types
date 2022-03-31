@@ -4,7 +4,7 @@ module Telegram
   module Bot
     module Types
       class InlineQueryResultMpeg4Gif < Base
-        attribute :type, String, default: 'mpeg4_gif'
+        attribute :type, String.default('mpeg4_gif')
         attribute :id, String
         attribute :mpeg4_url, String
         attribute :mpeg4_width, Integer

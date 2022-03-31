@@ -4,7 +4,7 @@ module Telegram
   module Bot
     module Types
       class InlineQueryResultContact < Base
-        attribute :type, String, default: 'contact'
+        attribute :type, String.default('contact')
         attribute :id, String
         attribute :phone_number, String
         attribute :first_name, String

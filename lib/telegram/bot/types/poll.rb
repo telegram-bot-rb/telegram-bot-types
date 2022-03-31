@@ -6,7 +6,7 @@ module Telegram
       class Poll < Base
         attribute :id, String
         attribute :question, String
-        attribute :options, [PollOption]
+        attribute :options, Array.of(PollOption)
         attribute :total_voter_count, Integer
         attribute :is_closed, Boolean
         attribute :is_anonymous, Boolean
@@ -14,7 +14,7 @@ module Telegram
         attribute :allows_multiple_answers, Boolean
         attribute :correct_option_id, Integer
         attribute :explanation, String
-        attribute :explanation_entities, [MessageEntity]
+        attribute :explanation_entities, Array.of(MessageEntity)
         attribute :open_period, Integer
         attribute :close_date, Integer
       end

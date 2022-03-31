@@ -21,13 +21,13 @@ module Telegram
         attribute :media_group_id, String
         attribute :author_signature, String
         attribute :text, String
-        attribute :entities, [MessageEntity]
-        attribute :caption_entities, [MessageEntity]
+        attribute :entities, Array.of(MessageEntity)
+        attribute :caption_entities, Array.of(MessageEntity)
         attribute :audio, Audio
         attribute :document, Document
         attribute :animation, Animation
         attribute :game, Game
-        attribute :photo, [PhotoSize]
+        attribute :photo, Array.of(PhotoSize)
         attribute :sticker, Sticker
         attribute :video, Video
         attribute :voice, Voice
@@ -38,10 +38,10 @@ module Telegram
         attribute :location, Location
         attribute :venue, Venue
         attribute :poll, Poll
-        attribute :new_chat_members, [User]
+        attribute :new_chat_members, Array.of(User)
         attribute :left_chat_member, User
         attribute :new_chat_title, String
-        attribute :new_chat_photo, [PhotoSize]
+        attribute :new_chat_photo, Array.of(PhotoSize)
         attribute :delete_chat_photo, Boolean
         attribute :group_chat_created, Boolean
         attribute :supergroup_chat_created, Boolean

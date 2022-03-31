@@ -4,7 +4,7 @@ module Telegram
   module Bot
     module Types
       class InputMediaAnimation < Base
-        attribute :type, String, default: 'animation'
+        attribute :type, String.default('animation')
         attribute :media, String
         attribute :thumb, String
         attribute :caption, String

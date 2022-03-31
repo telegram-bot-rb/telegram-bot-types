@@ -5,7 +5,7 @@ module Telegram
     module Types
       class UserProfilePhotos < Base
         attribute :total_count, Integer
-        attribute :photos, [[PhotoSize]]
+        attribute :photos, Array.of(Array.of(PhotoSize))
       end
     end
   end

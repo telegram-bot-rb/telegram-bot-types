@@ -5,6 +5,7 @@ module Telegram
     module Types
       class Message < Base
         attribute :message_id, Integer
+        attribute :message_thread_id, Integer
         attribute :from, User
         attribute :sender_chat, Chat
         attribute :date, Integer
